@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="icon" href="images/icon.jpg" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/568f3e5e26.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Hafilue-Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/hflogo.png" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h2>Hii..This is <span>Hafilue c</span> <br />from india</h2>
+          <a href="images/Resume_Hafilue c.pdf" download class="btn btn2"
+            >Download CV</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG_0224.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About me</h2>
+            <p>
+              Hey There...I'm an Electrical & Electronics Engineering graduate
+              from GEC Thrissur, who successfully transitioned into web
+              development. Proficient in the MERN stack, I specialize frontend
+              development, delivering functional and user-friendly web
+              applications. As a Software Engineer trainee at Impelsys, I honed
+              my skills through real-world projects and team collaborations.
+              Notably, I secured the 5th position at the all India level and 1st
+              position at the all Kerala level in the Effi cycle competition by
+              SAE India. With a strong work ethic and problem-solving skills,
+              I'm actively seeking new opportunities in web development to
+              further propel my career. Let's connect for potential
+              collaborations!
+            </p>
+            <div class="tab-title">
+              <p class="tab-link active-link" onclick="opentab('Education')">
+                Education
+              </p>
+              <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-link" onclick="opentab('Skills')">Skills</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="Education">
+              <ul>
+                <li>
+                  <span>B.Tech In Electrical And Electronics Engineering</span
+                  ><br />Government Engineering College,Thrissur <br />
+                  Aug 2018 – Jun 2022 <br />Affiliated Under APJ Abdul Kalam
+                  Kerala Technological University <br />
+                  CGPA : 8.58
+                </li>
+                <li>
+                  <span>12th</span><br />Navamukunda Higher Secondary School,
+                  Thirunavaya<br />
+                  Jun 2016 – May 2018 <br />Kerala State Education Board <br />
+                  With Aggregate of 96
+                </li>
+                <li>
+                  <span>10th</span><br />Navamukunda High School, Thirunavaya<br />
+                  2015 – 2016 <br />Kerala State Education Board <br />
+                  With Aggregate of 99
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Impelsys . Fulltime </span><br />Bengaluru, Karnataka,
+                  India · On-site<br />Successfully completed a comprehensive
+                  training program in web development technologies, gaining
+                  proficiency in MERN Stack technologies. Collaborated with
+                  colleagues on projects to apply newly acquired skills.
+                  Demonstrated a strong commitment to learning and staying
+                  up-to-date with the latest web development trends.Successfully
+                  completed a comprehensive training program in web development
+                  technologies, gaining proficiency in MERN Stack technologies.
+                  Collaborated with colleagues on projects to apply newly
+                  acquired skills. Demonstrated a strong commitment to learning
+                  and staying up-to-date with the latest web development trends.
+                  <br />
+                  Skills: MongoDB · React.js · Node.js · Git · Bootstrap
+                  (Framework) · Cascading Style Sheets (CSS) · HTML5 · React
+                  Native · JavaScript · MERN Stack
+                </li>
+                <li>
+                  <span
+                    >Kerala State Electricity Board (KSEB) · Internship </span
+                  ><br />
+                  Thrissur, Kerala, India · On-site <br />During my internship
+                  at the KSEB 110kV Substation in Viyur, I had the opportunity
+                  to gain hands-on experience and learn about the workings of a
+                  substation. I observed and participated in tasks related to
+                  the maintenance, monitoring, and operation of high-voltage
+                  equipment, transformers, and circuit breakers. This experience
+                  provided a practical understanding of substation operations
+                  and their role in ensuring reliable power distribution. It was
+                  a valuable learning opportunity that deepened my knowledge of
+                  electrical engineering and power systems.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Skills">
+              <ul>
+                <li>
+                  <span>MERN Stack</span><br />The MERN stack is a powerful
+                  combination of technologies for building modern web
+                  applications: <br />
+
+                  MongoDB: NoSQL database for flexible data storage. <br />
+                  Express.js: Lightweight Node.js framework for server-side
+                  development. <br />
+                  React: JavaScript library for building interactive user
+                  interfaces. <br />
+                  Node.js: Runtime environment for executing JavaScript on the
+                  server.
+                </li>
+                <li>
+                  <span>React Native</span><br />React Native: React Native is a
+                  JavaScript framework for building cross-platform mobile
+                  applications, enabling efficient development for both iOS and
+                  Android from a single codebase. It combines the power of React
+                  with native capabilities, offering a streamlined and
+                  accelerated approach to mobile app development.
+                </li>
+                <li>
+                  <span>HTML & CSS</span><br />HTML (HyperText Markup Language)
+                  is the standard markup language for creating the structure and
+                  content of web pages. <br />
+
+                  CSS (Cascading Style Sheets) is a styling language that
+                  enhances the presentation of HTML elements, defining
+                  aesthetics like layout, color, and typography for a visually
+                  appealing web experience.
+                </li>
+                <li>
+                  <span> Bootstrap</span><br />Bootstrap is a widely-used
+                  front-end framework offering pre-designed components and a
+                  responsive grid system. It simplifies web development,
+                  enabling the creation of visually appealing and
+                  mobile-friendly websites with ease.
+                </li>
+                <li>
+                  <span> Chakra UI</span><br />Chakra UI is a modern React
+                  component library known for its developer-friendly design.
+                  Built on Emotion, it provides accessible and customizable
+                  React components, facilitating the creation of consistent and
+                  visually pleasing user interfaces.
+                </li>
+                <li>
+                  <span> Programming Languages</span><br />JavaScript (JS):
+                  <br />
+                  JavaScript is a versatile programming language primarily used
+                  for dynamic web applications, enabling interactive user
+                  experiences both on the client and server sides. <br />Python:
+                  <br />
+                  Python is a readable, general-purpose programming language
+                  known for its simplicity. Widely used across various domains,
+                  it excels in applications ranging from web development to data
+                  science and automation.
+                </li>
+                <li>
+                  <span> Postman API</span><br />
+                  Postman is a powerful API development and testing tool that
+                  streamlines the creation, testing, and management of APIs. It
+                  offers a user-friendly interface, supports various HTTP
+                  methods, authentication types, and facilitates collaboration
+                  among developers.
+                </li>
+                <li>
+                  <span> Git</span><br />
+                  Git is a distributed version control system essential for
+                  tracking changes in software development. It facilitates
+                  collaboration by managing project history, enabling branching,
+                  merging, and efficient code tracking.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="service-list">
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h3>Web Development</h3>
+            <p>
+              Empower your online presence with our web development services. We
+              create responsive and visually compelling websites, blending
+              design aesthetics with seamless functionality. From user-friendly
+              interfaces to optimized performance, our web development ensures a
+              compelling digital footprint.
+            </p>
+            <a href="#contact">Talk a Deal</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h3>App Development</h3>
+            <p>
+              Transform your ideas into powerful applications with our app
+              development expertise. Whether it's iOS, Android, or
+              cross-platform development, we specialize in crafting intuitive
+              and feature-rich applications. From concept to deployment, our
+              team ensures your app not only meets but exceeds user
+              expectations, delivering a standout user experience.
+            </p>
+            <a href="#contact">Talk a Deal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfoli -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Works</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/chating.jpg" alt="" />
+            <div class="layer">
+              <h3>Chatting Website</h3>
+              <p>
+                It is a real-time chat application built with the MERN stack,
+                designed for users to engage in instant messaging and group
+                conversations. It leverages the power of Chakra UI for a modern
+                and responsive UI, and utilizes Socket.io for real-time
+                communication features.
+              </p>
+              <a href="https://github.com/Hafilu/Chat-And-Chill"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/expense.jpg" alt="" />
+            <div class="layer">
+              <h3>Expense Tracker App</h3>
+              <p>
+                It is a mobile application designed to help you manage and track
+                your expenses efficiently. With multiple screens and a
+                user-friendly interface, you can easily add, update, and delete
+                expenses, as well as view recent and all expenses at a glance.
+              </p>
+              <a href="https://github.com/Hafilu/Expense-Tracker-App"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/shopping.jpg" alt="" />
+            <div class="layer">
+              <h3>Online Shopping Website</h3>
+              <p>
+                This is a web application for managing an online shopping cart
+                with both user and admin interfaces. It's built using Node.js,
+                Express.js, MongoDB and Handlebars, Bootstrap for the frontend.
+                The application allows users to view products, add them to the
+                cart, place orders with cash on delivery or online payment, and
+                view their order history. Admins can manage products, users, and
+                orders.
+              </p>
+              <a href="https://github.com/Hafilu/Shopping-Cart"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/meal.jpg" alt="" />
+            <div class="layer">
+              <h3>Recipe Book App</h3>
+              <p>
+                This is a mobile application built with React Native that serves
+                as a recipe book for various dishes. It allows you to explore
+                different categories of dishes, view their details, and manage
+                favorites.
+              </p>
+              <a href="https://github.com/Hafilu/My-Recipe-Book"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p><i class="fa-regular fa-envelope"></i> hafliue.c@gmail.com</p>
+            <p><i class="fa-solid fa-mobile-screen-button"></i> 7591914433</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/hafilue-c-251a03202/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Hafilu"><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form id="submit-form" action="" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="inputname"
+                    name="name"
+                    class="form-control"
+                    placeholder="Name"
+                    required
+                  />
+                  <small id="usercheck" style="color: red">
+                    *Name required
+                  </small>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="inputEmail4"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                  <small id="emailcheck" style="color: red"
+                    >*Email required</small
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    id="inputmobile"
+                    name="mobile"
+                    class="form-control"
+                    placeholder="Phone no"
+                    required
+                  />
+                  <small id="numbercheck" style="color: red">
+                    *Mobile number required
+                  </small>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="inputAddress"
+                  name="message"
+                  placeholder="Type your message here..."
+                  cols="30"
+                  rows="6"
+                  required
+                ></textarea>
+                <small id="messagecheck" style="color: red">
+                  *This feild is required
+                </small>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-submit btn-grey">
+                  <span id="submitBtnText">Submit</span>
+                  <span id="loadingSpinner" style="display: none"
+                    >Submitting...</span
+                  >
+                </button>
+              </div>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-regular fa-copyright"></i> Hafilue c. Made by
+          <span style="color: brown; font-weight: bold">Hf</span>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const tablinks = document.getElementsByClassName("tab-link");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      // Document is ready
+      $(document).ready(function () {
+        // Validate Username
+        $("#usercheck").hide();
+        let nameError = true;
+        $("#inputname").keyup(function () {
+          validateName();
+        });
+
+        function validateName() {
+          let usernameValue = $("#inputname").val();
+          var namePattern = /^[A-Za-z\s'-]+$/;
+          if (usernameValue.length == "") {
+            $("#usercheck").show();
+            nameError = false;
+            return false;
+          } else if (usernameValue.length < 3 || usernameValue.length > 10) {
+            $("#usercheck").show();
+            $("#usercheck").html("*length of name must be between 3 and 10");
+            nameError = false;
+            return false;
+          } else if (!namePattern.test(usernameValue)) {
+            $("#usercheck").show();
+            $("#usercheck").html("*Invalid format");
+            nameError = false;
+            return false;
+          } else {
+            $("#usercheck").hide();
+            nameError = true;
+          }
+        }
+
+        //Validate Email
+
+        $("#emailcheck").hide();
+        let emailError = true;
+        $("#inputEmail4").keyup(function () {
+          validateEmail();
+        });
+
+        function validateEmail() {
+          let emailValue = $("#inputEmail4").val();
+          let regex =
+            /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+          if (emailValue.length == "") {
+            $("#emailcheck").show();
+            emailError = false;
+            return false;
+          } else if (regex.test(emailValue)) {
+            $("#emailcheck").hide();
+            emailError = true;
+          } else {
+            $("#emailcheck").show();
+            $("#emailcheck").html("*Invalid email id");
+            emailError = false;
+          }
+        }
+
+        // Validate mobile
+        $("#numbercheck").hide();
+        let numberError = true;
+        $("#inputmobile").keyup(function () {
+          validateNumber();
+        });
+
+        function validateNumber() {
+          let numberValue = $("#inputmobile").val();
+          var mobileNumberPattern = /^\d{10}$/;
+          if (numberValue.length == "") {
+            $("#numbercheck").show();
+            numberError = false;
+            return false;
+          } else if (!mobileNumberPattern.test(numberValue)) {
+            $("#numbercheck").show();
+            $("#numbercheck").html("*Invalid mobile number");
+            numberError = false;
+            return false;
+          } else {
+            $("#numbercheck").hide();
+            numberError = true;
+          }
+        }
+
+        // Validate message
+        $("#messagecheck").hide();
+        let messageError = true;
+        $("#inputAddress").keyup(function () {
+          validateMessage();
+        });
+
+        function validateMessage() {
+          let messageValue = $("#inputAddress").val();
+          if (messageValue.length == "") {
+            $("#messagecheck").show();
+            messageError = false;
+            return false;
+          } else {
+            $("#messagecheck").hide();
+            messageError = true;
+          }
+        }
+
+        // Submit button
+        $(".btn-grey").click(function (e) {
+          validateName();
+
+          validateNumber();
+          validateEmail();
+          validateMessage();
+
+          if (
+            nameError == true &&
+            numberError == true &&
+            messageError == true &&
+            emailError == true
+          ) {
+            const msg = document.getElementById("msg");
+
+            $("#submit-form").submit((e) => {
+              e.preventDefault();
+              showLoadingSpinner();
+              var xhr = $.ajax({
+                url: "https://script.google.com/macros/s/AKfycby-yMaYkCa4fUi1HTb7HKMvyKY-gUHSzRbyO4mQqMA6JlmZvKTMzEZiWN6maKji74Q6/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                  //   alert("Form submitted successfully");
+                  setTimeout(function () {
+                    window.location.reload();
+                  }, 1000);
+
+                  //   window.location.href="https://google.com"
+                  $("#submit-form")[0].reset();
+                  msg.innerHTML = "Message sent successfully!";
+                  setTimeout(function () {
+                    msg.innerHTML = "";
+                  }, 5000);
+                },
+                error: function (err) {
+                  alert("Something Error");
+                },
+                complete: function () {
+                  hideLoadingSpinner();
+                },
+              });
+            });
+
+            return true;
+          } else {
+            return false;
+          }
+        });
+        function showLoadingSpinner() {
+          $("#submitBtnText").hide();
+          $("#loadingSpinner").show();
+        }
+
+        function hideLoadingSpinner() {
+          $("#submitBtnText").show();
+          $("#loadingSpinner").hide();
+        }
+      });
+    </script>
+  </body>
+</html>
